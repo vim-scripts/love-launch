@@ -20,8 +20,10 @@ if !exists( 'g:lovelaunch_path' )
 	g:lovelaunch_path = 'C:\Prorgam Files\LOVE\love.exe'
 endif
 
-map <M-l> <Plug>lovelaunchRun
-noremap <script> <plug>lovelaunchRun <SID>Run
+if !hasmapto( '<Plug>lovelaunchRun' )
+	map <M-l> <Plug>lovelaunchRun
+endif
+noremap <script> <Plug>lovelaunchRun <SID>Run
 noremap <SID>Run :call <SID>Run()<CR>
 
 function s:Run()

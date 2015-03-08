@@ -2,7 +2,7 @@
 
 Mappings: 
 <Plug>lovelaunchRun
-	Launch LOVE. 
+	Launches LOVE. 
 	(Default: Alt-l)
 
 Variables:
