@@ -1,0 +1,4 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=5125
+
+Use Alt-L to launch LOVE (or love2d: http://love2d.org) for your current project.
+See the Gist at https://gist.github.com/davisdude/0f46c9c00917fc5c53bb

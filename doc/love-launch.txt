@@ -1,0 +1,10 @@
+*love-launch.txt*	Plugin for launching LOVE
+
+Mappings: 
+Alt-l
+	Launch LOVE
+
+Variables:
+g:lovelaunch_path
+	String. Your full path to love.exe (be sure to include the .exe)
+	(Default: "C:\Program Files\LOVE\love.exe")
