@@ -1,11 +1,17 @@
 *love-launch.txt*	Plugin for launching LOVE
 
 Mappings: 
-<Plug>lovelaunchRun
-	Launches LOVE. 
-	(Default: Alt-l)
+---------
+map <silent> <KEY> <Plug>lovelaunchRun						(map <silent> <M-r> <Plug>lovelaunchRun)
+						This will run the script that runs LOVE
 
-Variables:
-g:lovelaunch_path
-	String. Your full path to love.exe (be sure to include the .exe)
-	(Default: "C:\Program Files\LOVE\love.exe")
+Globals:
+--------
+lovelaunch_path			Path that love.exe is located.			("C:\Program Files\LOVE\love.exe")
+lovelaunch_conf			Whether conf.lua should	also be present	(0)
+						with main.lua. Useful when working with			0 - DON'T look for conf.lua
+						multiple files named conf.lua					1 - DO look for conf.lua
+lovelaunch_conf_loops	The max amount of main.lua that can be	(2)
+						be found before aborting the search.
+lovelaunch_max_loops	The maximum amount of levels to go up 	(10)
+						before failing
